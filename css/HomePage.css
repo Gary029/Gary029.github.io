@@ -1,0 +1,508 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;   
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #101920;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    z-index: 999;
+}
+
+.headmin{
+    display: none;
+}
+
+.nav-up{
+    top:-90px;
+}
+
+.transparent{
+    background: transparent;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo a:hover{  
+    color: lightgray;
+    transition: 0.2s;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.logo a{
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar{
+    position: relative;
+    display: inline-block;
+    padding-right: 100px;
+    padding-top: 25px;
+}
+
+.navbar i{
+    padding-left: 40px;
+    font-size: 30pt;
+    color: white;
+}
+
+.navbar i:hover{
+    color: lightgray;
+}
+
+.content{
+    display: none;
+    position: absolute;
+    width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 90px;
+    border-bottom: #101920 solid 3px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.content a{
+    display: block;
+    padding: 12px 16px;
+    color: #101920;
+    font-weight: bold;
+}
+
+.navbar:hover .content{
+    display: block;
+    background-color: whitesmoke;
+}
+
+.content a:hover{
+    background-color: lightgray;
+    transition: 0.4s ease;
+}
+
+.mid{
+    margin-top: -20px;
+}
+
+.slideshow img{
+
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    
+}
+
+
+.slidehow{
+    position: relative;
+}
+
+.slides{
+    display: inline-flex;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#prev, #next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #101920;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.4s ease;
+    border-radius: 50px 0px 0px 50px;
+    border: none;
+}
+
+#next{
+    right: 0px;
+}
+
+#prev{
+    left: 0px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+#prev:hover, #next:hover {
+    background-color: gray;
+}
+
+.oneof{
+    background-color: #101920;
+    text-align: center;
+    color: white;
+    font-size: 35pt;
+    padding-top: 80px;
+    padding-bottom: 200px;
+    margin-top: -10px;
+}
+
+.ad{
+    background-color: #101920;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+}
+
+.ads{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.ads img{
+    width: 150px;
+    margin-top: -80px;
+}
+
+.ads i{
+    margin-top: -80px;
+    font-size: 100pt;
+    color: whitesmoke;
+}
+
+.ads h4{
+    padding-top: 50px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.ads p{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13pt;
+}
+
+.firstbox{
+    background-color: lightgreen;
+}
+
+.secondbox{
+    background-color: lightpink;
+}
+
+.thirdbox{
+    background-color: lightskyblue;
+}
+
+.based{
+    background: rgba(0,0,0,0.5) url(../Images/HomePage/virginia.jpg);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    background-blend-mode: darken;
+    font-weight: bolder;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    padding-right: 100px;
+    font-size: 30pt;
+}
+
+.showcaseProduct{
+    background-color: #101920;
+    text-align: center;
+    color: white;
+    font-size: 40pt;
+    padding-top: 70px;
+    height: 800px;
+}
+
+.showcaseProduct button{
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    font-size: 15pt;
+    border-radius: 40pt;
+    margin-bottom: 70px;
+    margin-top: 420px;
+}
+
+.showcaseProduct a{
+    font-weight: bold;
+    color: #101920;
+}
+
+.showcaseProduct a:hover{
+    color: lightgray;
+}
+
+.product{
+    padding-top: 100px;
+    position: relative;
+    background-color: #101920;
+    padding-bottom: 30px;
+}
+
+.product img{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    border-radius: 50px;
+    left: 0;
+}
+
+.benefitContainer{
+    background-color: #060614;
+    padding-top: 40px;
+}
+
+.benefitContainer h1{
+    font-size: 45pt;
+    padding-left: 100px;
+    /* color: #101920; */
+    color: white;
+}
+
+.benefitContainer h2{
+    font-size: 33pt;
+    padding-left: 100px;
+    /* color: #101920; */
+    color: white;
+    padding-bottom: 40px;
+}
+
+.btnRegis{
+    background-color: #101920;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.btnRegis button{
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    font-size: 15pt;
+    border-radius: 40pt;
+    margin-bottom: 60px;
+}
+
+.btnRegis a{
+    color: #101920;
+    font-weight: bold;
+}
+
+.btnRegis a:hover{
+    color: lightgray;
+}
+
+.benefit{
+    display: flex;
+    justify-content: space-around;
+    background-color: #101920;
+    border-radius: 50px 50px 0 0;
+}
+
+.bens{
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+}
+
+.bens img{
+    width: 100px;
+}
+
+.bens i{
+    font-size: 100pt;
+}
+
+.bens h4{
+    padding-top: 40px;
+    font-size: 20pt;
+}
+
+.bens p{
+    padding-top: 5px;
+}
+
+footer{
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.footercontainer{
+	max-width: 2000px;
+    margin: 0 10%;
+}
+.footerrow{
+	display: flex;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color:  #101920;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+
+.footer-col .social-links a{
+    font-size: 20px;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+    text-align: center;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.fab{
+    margin-top: 25%;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+@media screen and (max-width:800px){
+
+    .headmain{
+        display: none;
+    }
+
+    .headmin{
+        display: block;
+    }
+
+    .navbar{
+        padding-right: 40px;
+    }
+
+    .ad{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ads{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 90px;
+    }
+
+    .based{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .based h2{
+        font-size: 25pt;
+    }
+
+    .based h3{
+        font-size: 20pt;
+    }
+
+    .showcaseProduct{
+        height: 1050px;
+    }
+
+    .benefitContainer h1{
+        padding-left: 20px;
+    }
+
+    .benefitContainer h2{
+        font-size: 24pt;
+        padding-left: 20px;
+    }
+
+    .benefit{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btnRegis{
+        padding-top: 40px;
+    }
+}

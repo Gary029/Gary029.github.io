@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zunder Zifflin</title>
+    <link rel="icon" href="../Images/Header/logo2.png" type = "image/x-icon">
+    <link rel="stylesheet" href="../css/Register.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../Js/User.js"></script>
+    <script defer src="../Js/header.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script defer src="../Js/CompPro.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+</head>
+<body>
+    <div class="headmain">
+        <header class="nav-down transparent">
+            <div class="logo">
+                <a href="HomePage.html">
+                    <img src="../Images/Header/logo2.png" alt="">
+                </a>
+                <a href="HomePage.html">Home</a>
+                <a href="Product.html">Products</a>
+                <a href="CompPro.html">About Us</a>
+            </div>
+            <div class="navbar">
+                <i class="material-icons">person</i>
+                <div class="content">
+                    <a href="Register.html">Register</a>
+                    <a href="ContactUs.html">Contact Us</a>
+                </div>
+            </div>   
+        </header>
+    </div>
+    <div class="headmin">
+        <header class="nav-down transparent">
+            <div class="logo">
+                <a href="HomePage.html">
+                    <img src="../Images/Header/logo2.png" alt="">
+                </a>
+            </div>
+            <div class="navbar">
+                <i class="material-icons">dehaze</i>
+                <div class="content">
+                    <a href="HomePage.html">Home</a>
+                    <a href="Product.html">Products</a>
+                    <a href="CompPro.html">About Us</a>
+                    <a href="Register.html">Register</a>
+                    <a href="ContactUs.html">Contact Us</a>
+                </div>
+            </div>   
+        </header>
+    </div>
+
+    <div class="main">
+        <h1>Join As A Member</h1>
+        <div class="container">
+            <table>
+                <!-- direct ke home -->
+                <form name="RegistForm" action="../html/Register.html">
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" id="username" placeholder="Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="email" id="email" placeholder="Mailbox@gmail.com" name="mail">
+                        </td>
+                    </tr>
+                    <tr class="gender">
+                        <td>
+                            <input type="radio" name="gender" id="regis_male">Male
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" id="regis_female">Female
+                        </td>
+                    </tr>     
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="address" id="address" cols="55" rows="5" placeholder="Address"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>
+                            <select name="City" id="city">
+                                <option value="">--Choose Country--</option>
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Tangerang">Tangerang</option>
+                                <option value="Manado">Manado</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="Agreement" id="agreement"> Agreement to company's terms and services  
+                        </td>
+                    </tr>
+                    <tr class="submit">
+                        <td colspan="2">
+                            <input type="submit" value="Register" onclick="validate()">
+                        </td>
+                    </tr>
+                    
+                </form>
+                
+            </table>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footercontainer">
+            <div class="footerrow">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="HomePage.html">Home</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                        <li><a href="CompPro.html">Company Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Member</h4>
+                    <ul>
+                        <li><a href="Register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="Product.html">Office Supplies</a></li>
+                        <li><a href="Product.html">Printer</a></li>
+                        <li><a href="Product.html">Paper</a></li>
+                        <li><a href="Product.html">Computer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+ </body>
+ </html>
+ 
